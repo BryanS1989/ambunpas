@@ -22,7 +22,7 @@ export class TopBarComponent implements OnInit {
     }
   ];
 
-  activeLink = this.menu[0];
+  activeLink = {};
 
   constructor() { }
 
