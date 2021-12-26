@@ -1,1 +1,17 @@
-<p>top-bar works!</p>
+<header>
+  <div class="hgroup">
+    <h1>EN UN PAS</h1>
+    <h2>Muntatge i aplicacions</h2>
+  </div>
+
+  <nav mat-tab-nav-bar mat-align-tabs="center"
+  >
+    <a mat-tab-link *ngFor="let menuItem of menu"
+        (click)="activeLink = menuItem"
+        [active]="activeLink == menuItem"
+        [routerLink]="menuItem.path"
+    >
+      {{menuItem.name}}
+    </a>
+  </nav>
+</header>
