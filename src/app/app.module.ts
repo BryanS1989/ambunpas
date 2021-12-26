@@ -6,15 +6,28 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './components/top-bar/top-bar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
+
+// ANGULAR MATERIAL COMPONENTS
+import {MatTabsModule} from '@angular/material/tabs';
+import { UsComponent } from './components/us/us.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { OurServicesComponent } from './components/our-services/our-services.component';
+import { FooterComponent } from './components/footer/footer.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    TopBarComponent
+    TopBarComponent,
+    UsComponent,
+    ContactComponent,
+    OurServicesComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
