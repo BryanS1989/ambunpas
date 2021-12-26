@@ -7,6 +7,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopBarComponent implements OnInit {
 
+  menu = [
+    {
+      name : 'Nosotros',
+      path : 'us'
+    },
+    {
+      name : 'Servicios',
+      path : 'services'
+    },
+    {
+      name : 'Contáctanos',
+      path : 'contact'
+    }
+  ];
+
+  activeLink = this.menu[0];
+
   constructor() { }
 
   ngOnInit(): void {
