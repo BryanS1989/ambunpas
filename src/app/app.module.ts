@@ -14,6 +14,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { MainContentComponent } from './components/main-content/main-content.com
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
