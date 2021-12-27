@@ -14,6 +14,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { OurServicesComponent } from './components/our-services/our-services.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
@@ -31,6 +33,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatTabsModule,
+    MatCardModule,
+    MatButtonModule,
     FontAwesomeModule
   ],
   providers: [],
