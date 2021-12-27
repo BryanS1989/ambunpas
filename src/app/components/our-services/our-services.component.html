@@ -1,1 +1,23 @@
-<p>our-services works!</p>
+<mat-card class="example-card" *ngFor="let service of servicesArr">
+
+  <mat-card-header>
+    <mat-card-title>{{ service.title }}</mat-card-title>
+    <mat-card-subtitle>{{ service.subtitle }}</mat-card-subtitle>
+  </mat-card-header>
+
+  <img mat-card-image
+    src="{{ service.image }}"
+    alt="{{ service.altImage }}"
+  >
+
+  <mat-card-content>
+    <p>
+      {{ service.description }}
+    </p>
+  </mat-card-content>
+
+  <mat-card-actions align="end">
+    <button mat-button>Saber más...</button>
+  </mat-card-actions>
+
+</mat-card>
