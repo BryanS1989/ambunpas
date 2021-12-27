@@ -1,1 +1,5 @@
-<p>footer works!</p>
+<footer>
+  <a *ngFor="let rrss of rrssArray" href="{{rrss.url}}">
+    <fa-icon [icon]="rrss.icon" size="2x"></fa-icon>
+  </a>
+</footer>
