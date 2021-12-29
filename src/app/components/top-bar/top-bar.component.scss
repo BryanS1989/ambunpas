@@ -1,0 +1,12 @@
+@import '../../../styles/global.scss';
+
+header {
+  background: $background-color;
+
+  .banner {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
