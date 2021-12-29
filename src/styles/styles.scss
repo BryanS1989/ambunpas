@@ -1,4 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
+@import 'global.scss';
+
 html, body { height: 100%; }
+
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+article {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3rem 5%;
+}
