@@ -1,0 +1,10 @@
+<nav mat-tab-nav-bar mat-align-tabs="center"
+>
+  <a mat-tab-link *ngFor="let menuItem of menu"
+      (click)="activeLink = menuItem"
+      [active]="activeLink == menuItem"
+      [routerLink]="menuItem.path"
+  >
+    {{menuItem.name}}
+  </a>
+</nav>

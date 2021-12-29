@@ -17,6 +17,7 @@ import { MainContentComponent } from './components/main-content/main-content.com
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     ContactComponent,
     OurServicesComponent,
     FooterComponent,
-    MainContentComponent
+    MainContentComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
