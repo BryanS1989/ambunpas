@@ -1,0 +1,20 @@
+@import '../../../styles/global.scss';
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  height: 5vh;
+  background-color: $background-color;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 1px solid rgba(0,0,0,.12);
+}
+
+.rrss {
+  .rrss-icon {
+    padding: 1rem;
+  }
+}
