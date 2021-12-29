@@ -1,5 +1,7 @@
 <article>
-  <section *ngFor="let service of servicesArr">
+  <section
+    *ngFor="let service of servicesArr; let i = index" [attr.data-index]="i"
+  >
     <mat-card class="card">
 
       <mat-card-header class="card-header">
