@@ -16,6 +16,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { MainContentComponent } from './components/main-content/main-content.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
@@ -37,6 +39,8 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
     MatTabsModule,
     MatCardModule,
     MatButtonModule,
+    MatMenuModule,
+    MatIconModule,
     FontAwesomeModule
   ],
   providers: [],
