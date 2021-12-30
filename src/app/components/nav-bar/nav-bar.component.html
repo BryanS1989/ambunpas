@@ -1,6 +1,28 @@
-<nav mat-tab-nav-bar mat-align-tabs="center"
+<!-- FOR MOBILE -->
+<nav
+  class="burguer-menu"
 >
-  <a mat-tab-link *ngFor="let menuItem of menu"
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Amb un pas menu">
+    <mat-icon class="icon-display">menu</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <a mat-menu-item *ngFor="let menuItem of menuArr"
+        (click)="activeLink = menuItem"
+        [routerLink]="menuItem.path"
+    >
+      {{menuItem.name}}
+    </a>
+  </mat-menu>
+</nav>
+
+
+<!-- FOR OTHER DEVICES -->
+<nav
+  class="tab-nav-bar"
+  mat-tab-nav-bar
+  mat-align-tabs="center"
+>
+  <a mat-tab-link *ngFor="let menuItem of menuArr"
       (click)="activeLink = menuItem"
       [active]="activeLink == menuItem"
       [routerLink]="menuItem.path"

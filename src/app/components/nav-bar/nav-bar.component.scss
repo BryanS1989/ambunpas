@@ -1,8 +1,24 @@
 @import '../../../styles/global.scss';
 
-nav {
-  background-color: $background-color;
-  position: sticky;
-  top: -1px;
-  z-index: 10;
+.burguer-menu {
+  position: absolute;
+  top: 0.2rem;
+  right: 0.5rem;
+
+  .icon-display {
+    transform: scale(1.5);
+  }
+}
+
+nav.tab-nav-bar {
+  display: none;
+}
+
+@media (min-width: 426px) {
+  .burguer-menu {
+    display: none;
+  }
+  nav.tab-nav-bar {
+    display: block;
+  }
 }
