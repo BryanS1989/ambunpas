@@ -1,12 +1,14 @@
 @import '../../../styles/global.scss';
 
 header {
-  background: $background-color;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(0,0,0,.12);
+  background-color: $background-color;
 
   .banner {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-items: center;
+    padding: 1.5rem 0;
   }
 }
