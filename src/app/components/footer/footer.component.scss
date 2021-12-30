@@ -1,9 +1,6 @@
 @import '../../../styles/global.scss';
 
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100vw;
   height: 5vh;
   background-color: $background-color;
   display: flex;
@@ -15,6 +12,6 @@ footer {
 
 .rrss {
   .rrss-icon {
-    padding: 1rem;
+    padding: 0 1rem;
   }
 }
